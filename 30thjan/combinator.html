@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*.parent{
+			text-align: left;
+			color: red;
+			text-decoration: line-through;
+		}*/
+		/* descandant selector*/
+		.demo p{
+			color: red;
+		}   /* child selector */
+		.demo>p{
+			background-color: blue;
+		}
+		/*adjaecandant it is gives section after any tag element we can access use + symbol*/
+		.demo+h2
+		{
+			background-color: green;
+		}
+		/* it is used for every after section or not */ 
+		.demo ~h2{
+			background-color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<!--<section class="parent">
+	<h1>combinator Heading</h1>
+<p>This is combinator paragraph</p>
+<h2> haeding combinator</h2>
+</section>-->
+<section class="demo">
+	<p>This is para one child to section </p>
+	<p>this is para two child to section </p>
+	<div>
+		<p>This is grand child to section and child to div</p>
+	</div>
+	<p>this is para three child to parent </p>
+</section>
+<p>This is normal para
+<h2>Good evening</h2>
+</body>
+</html>
